@@ -27,4 +27,13 @@ AVG(price) OVER (
     )
 ```
 
+### Aggregate Over Non-Grouped Columns
+```aiignore
+SELECT
+    product,
+    revenue,
+    SUM(revenue) OVER () AS total_revenue,
+    revenue / SUM(revenue) OVER () AS pct_of_total
+FROM sales;
+```
 
