@@ -1,7 +1,7 @@
 ### Date and Time Manipulation
 
-`DATE_TRUNC('month', order_date)`
-`DATE_ADD(order_date, INTERVAL 7 DAY)`
+`DATE_TRUNC('month', order_date)`  
+`DATE_ADD(order_date, INTERVAL 7 DAY)`  
 `DATEDIFF(day, start_date, end_date)`
 
 
