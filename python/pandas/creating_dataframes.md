@@ -15,3 +15,7 @@ df = pd.DataFrame([
     {"name": "B", "age": 34}
 ])
 ```
+
+## From CSV
+
+`df = pd.read_csv("file.csv")`
