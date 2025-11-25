@@ -33,3 +33,30 @@ df.columns = df.columns.str.lower()
 df.columns = df.columns.str.replace(" ", "_")
 ```
 
+## Apply, Map, Applymap
+
+### Apply on a column
+
+```aiignore
+df['double'] = df['num'].apply(
+    lambda x: x*2
+)
+```
+
+### Map on a Column
+
+```aiignore
+df['grade'] = df['score'].map({
+    90: "A",
+    80: "B"
+})
+```
+
+### Apply on an entire DataFrame
+
+```aiignore
+df.applymap(
+    lambda x: x if isinstance(x, str) else round(x, 2)
+)
+```
+
