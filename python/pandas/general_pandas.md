@@ -21,16 +21,16 @@ df["col"].unique()
 
 ## Missing Data
   
-### Count missing data per column
+#### Count missing data per column
 
 `df.isna().sum()`
 
 
-### Drop rows with ANY missing data
+Drop rows with ANY missing data
   
 `df.dropna()`
 
-### Drop rows where specific columns have missing data
+#### Drop rows where specific columns have missing data
 
 ```aiignore
 df.dropna(
@@ -57,57 +57,4 @@ df.groupby("team").agg({
     "score": "mean",
     "age": "max"
 })
-```
-
-## Merging and Joining
-
-### Inner Join
-  
-```aiignore
-pd.merge(
-    df1,
-    df2,
-    on="id"
-)
-```
-
-### Left, Right, Outer Join
-
-```aiignore
-pd.merge(
-    df1,
-    df2,
-    on="id",
-    how="left" # "right", "outer", "inner"
-)
-```
-
-### Stack Rows
-
-```aiignore
-pd.concat(
-    [df1, df2],
-    axis=0
-)
-```
-
-### Stack Columns
-
-```aiignore
-pd.concat(
-    [df1, df2],
-    axis=1
-)
-```
-
-## Pivot Tables
-
-```aiignore
-pd.pivot_table(
-    df,
-    values="sales",
-    index="month",
-    columns="region",
-    aggfunc="sum"
-)
 ```
