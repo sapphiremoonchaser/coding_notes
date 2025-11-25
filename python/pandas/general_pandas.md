@@ -100,3 +100,14 @@ pd.concat(
 )
 ```
 
+## Pivot Tables
+
+```aiignore
+pd.pivot_table(
+    df,
+    values="sales",
+    index="month",
+    columns="region",
+    aggfunc="sum"
+)
+```
