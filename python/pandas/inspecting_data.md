@@ -11,3 +11,42 @@ df.index          # row index
   
 ```
 
+## Missing Data
+  
+### Count missing data per column
+
+`df.isna().sum()`
+
+
+### Drop rows with ANY missing data
+  
+`df.dropna()`
+
+### Drop rows where specific columns have missing data
+
+```aiignore
+df.dropna(
+    subset=["col"]
+)
+```
+
+## Sorting
+
+```aiignore
+df.sort_values("age")  
+df.sort_values("age", ascending=False)
+df.sort_values(["age", "name"])
+```
+
+## Group By
+
+`df.groupby("category")["sales"].sum()`
+
+### multiple aggregations 
+
+```aiignore
+df.groupby("team").agg({
+    "score": "mean",
+    "age": "max"
+})
+```
