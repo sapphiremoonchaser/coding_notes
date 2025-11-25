@@ -11,6 +11,14 @@ df.index          # row index
   
 ```
 
+## Value Counts and Unique
+
+```aiignore
+df["col"].value_counts()
+df["col"].nunique()
+df["col"].unique()
+```
+
 ## Missing Data
   
 ### Count missing data per column
