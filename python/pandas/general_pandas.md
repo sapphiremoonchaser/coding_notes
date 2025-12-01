@@ -3,12 +3,11 @@
 ```aiignore
 df.head()         # first 5 rows
 df.tail()         # last 5 rows
-df.info()         # column types, missing values
-df.describe()     # summary stats
+df.info()         # column types, missing values (count per column)
+df.describe()     # summary stats (count, mean, std, quantiles)
 df.shape          # (rows, columns)
 df.columns        # column names
 df.index          # row index
-  
 ```
 
 ## Value Counts and Unique
