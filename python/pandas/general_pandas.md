@@ -32,6 +32,13 @@ df["col"].nunique() # Unique Count by column
 df["col"].unique()
 ```
 
+## Rename Specific Column
+df = df.rename(
+    columns = {
+        "old_name": "name_name"
+    }
+)
+
 ## Missing Data
   
 #### Count missing data per column
@@ -50,6 +57,10 @@ df.dropna(
     subset=["col"]
 )
 ```
+
+## Check for Duplicated Data
+  
+`df.duplicated().sum()`
 
 ## Sorting
 
