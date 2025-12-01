@@ -10,6 +10,20 @@ df.columns        # column names
 df.index          # row index
 ```
 
+## Custom Summary Stat DataFrame 
+
+```aiignore
+summary = pd.DataFrame({
+    'stat': ['min', 'mean', 'median', 'max'],
+    'avg_time_to_throw': [
+        passer_df_pts['avg_time_to_throw'].min(),
+        passer_df_pts['avg_time_to_throw'].mean(),
+        passer_df_pts['avg_time_to_throw'].median(),
+        passer_df_pts['avg_time_to_throw'].max()
+    ]
+})
+```
+
 ## Value Counts and Unique
 
 ```aiignore
