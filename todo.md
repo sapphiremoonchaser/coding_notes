@@ -4,7 +4,7 @@ coding-notes/
 │   ├── basics.md
 │   ├── string_manipulation.md
 │   ├── ~~datatime_manipulation.md~~
-│   ├── pandas.md
+│   ├── ~~pandas.md~~
 │   └── examples/
 │
 ├── sql/
@@ -13,7 +13,7 @@ coding-notes/
 │   ├── ~~exists.md~~
 │   ├── ~~date_time.md~~
 │   ├── ~~optimization.md~~
-│   ├── string_manipulations.md
+│   ├── ~~string_manipulations.md~~
 │   └── ~~tables.md~~
 │
 ├── data_science/
