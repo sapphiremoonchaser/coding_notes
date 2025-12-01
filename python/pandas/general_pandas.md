@@ -14,7 +14,7 @@ df.index          # row index
 
 ```aiignore
 df["col"].value_counts()
-df["col"].nunique()
+df["col"].nunique() # Unique Count by column
 df["col"].unique()
 ```
 
