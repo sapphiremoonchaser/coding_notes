@@ -39,6 +39,18 @@ df = df.rename(
     }
 )
 
+## Rename specif values
+```aiignore
+ldr_df.loc[
+    ldr_df['column_to_replace_in'].str.contains(
+        'string_to_be_replaced',
+        case=False,
+        na=False
+    ),
+    'column_to_look_through'
+] = 'string_to_replace'
+```
+
 ## Missing Data
   
 #### Count missing data per column
