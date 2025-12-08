@@ -51,6 +51,24 @@ ldr_df.loc[
 ] = 'string_to_replace'
 ```
 
+## Rename Specific values with list or regex
+```aiignore
+# Rename Born To Die versions to 'Born To Die'
+btd_version_patterns = [
+    'Born To Die',
+    'Summertime Sadness'
+]
+
+ldr_df.loc[
+    ldr_df['album_name'].str.contains(
+        '|'.join(btd_version_patterns),
+        case=False,
+        na=False
+    ),
+    'album_name'
+] = 'Born To Die'
+```
+
 ## Missing Data
   
 #### Count missing data per column
