@@ -100,6 +100,19 @@ df.sort_values("age", ascending=False)
 df.sort_values(["age", "name"])
 ```
 
+#### Sorting a list and specifying ascending
+```aiignore
+
+df_grouped = df_grouped.sort_values([
+    'year',
+    'track_popularity'
+],
+ascending=[
+    True,
+    False
+])
+```
+
 ## Group By
 
 `df.groupby("category")["sales"].sum()`
