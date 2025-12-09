@@ -50,18 +50,18 @@ plt.show()
 ## Plotly Line Chart
 
 ```aiignore
+# Plot using plotly line graph
 fig = px.line(
-    top_artists_last_10,
+    genres_plot,
     x='year',
     y='track_popularity',
-    title='Average Track Popularity by Year',
-    markers=True,
+    color='artist_genres',
+    title='Genre Popularity Over Time (Top 10 Genres)',
     labels={
-        'track_popularity': 'Average Popularity',
-        'year': 'Year'
+        'artist_genres': 'Genre',
+        'track_popularity': 'Avg Popularity'
     }
 )
-
 fig.show()
 ```
 
