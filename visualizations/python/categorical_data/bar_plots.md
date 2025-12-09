@@ -28,6 +28,24 @@ plt.show()
 ```
 ![MatPlotLib Vertical Bar Graph](images/matplotlib_vertical_bar_graph.png)
 
+### Matplotlib Horizontal Bar Graph
+```aiignore
+plt.figure(figsize = (12,6))
+
+plt.barh(
+    consistent_artists['artist_name'],
+    consistent_artists['std']
+)
+
+plt.xlabel('Std Dev of Track Popularity')
+plt.title('Top 10 Most Consistent Artists')
+plt.gca().invert_yaxis() # longest bar at bottom
+plt.show()
+```
+
+![MatPlotLib Horizontal Bar Graph](images/matplotlib_horizontal_bar_graph.png)
+
+
 
 ## Plotly Vertical Bar Graph
 
