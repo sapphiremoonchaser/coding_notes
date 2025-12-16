@@ -35,6 +35,13 @@ for column in df.columns:
   
 `from sklearn.preprocessing import LabelEncoder`
 
+one column
+
+```aiignore
+le = LabelEncoder()
+y_encoded = le.fit_transform(y)
+```
+
 ```aiignore
 label_encoder = LabelEncoder()
 

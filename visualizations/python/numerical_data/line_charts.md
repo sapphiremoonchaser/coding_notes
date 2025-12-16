@@ -50,16 +50,25 @@ plt.show()
 ## Plotly Line Chart
 
 ```aiignore
-# Plot using plotly line graph
+# Get the top artists from previously created df
+top_artists = top_consistent_artists['artist_name']
+
+# Filter to only the top artists
+plot_data = avg_track_pop_by_artist_decade[
+    avg_track_pop_by_artist_decade['artist_name'].isin(top_artists)
+]
+
 fig = px.line(
-    genres_plot,
-    x='year',
+    plot_data,
+    x='decade',
     y='track_popularity',
-    color='artist_genres',
-    title='Genre Popularity Over Time (Top 10 Genres)',
+    color='artist_name',
+    markers=True,
+    title='Popularity Trajectories of Long-Lasting Artists',
     labels={
-        'artist_genres': 'Genre',
-        'track_popularity': 'Avg Popularity'
+        'artist_name': 'Artist',
+        'track_popularity': 'Popularity',
+        'decade': 'Decade'
     }
 )
 fig.show()

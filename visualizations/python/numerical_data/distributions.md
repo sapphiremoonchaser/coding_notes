@@ -42,16 +42,15 @@ plt.show()
 ## Plotly Hist/Box Plot for a specific Metric
 
 ```aiignore
-fig = px.histogram(
-    ldr_df,
-    x='track_popularity',
-    color='album_name',
-    barmode='overlay',
-    nbins=30,
-    title='Track Popularity by Album',
-    marginal='box'
+# Distribution Comparison of artist_type and avg_popularity
+sns.boxplot(
+    data=artist_features,
+    x='artist_type',
+    y='avg_popularity'
 )
-fig.show()
+
+plt.title('Average Popularity by Artist Type')
+plt.show()
 ```
 
 ![Plotly Hist and Box Plot](images/plotly_hist_box_plot.png)
