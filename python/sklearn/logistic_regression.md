@@ -15,3 +15,19 @@ model.fit(
     y_train
 )
 ```
+
+### Predictions
+
+`from sklearn.metrics import classification report`
+
+```aiignore
+y_pred = model.predict(X_test)
+
+print(
+    classification_report(
+        y_test,
+        y_pred,
+        target_names=le.classes_
+    )
+)
+```
