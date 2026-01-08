@@ -60,6 +60,20 @@ for feature, score in zip(X.columns, importance):
     print(f'Feature: {feature}, Score: {score:.5f}')
 ```
 
+## Logistic Regression Coefficients
+
+```aiignore
+importance = pd.DataFrame({
+    'feature': features,
+    'coefficient': model.coef_[0]
+}).sort_values(
+    by='coefficient',
+    ascending=False
+)
+
+importance
+```
+
 ## XGBoost Feature Importance
 
 `from xgboost import XGBRegressor`
