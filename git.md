@@ -11,7 +11,7 @@
 `git branch` # list branches  
 `git branch <name>` # create new branch  
 `git switch <name>` # switch to branch  
-`git checking -b <name>` # create and switch
+`git checkout -b <name>` # create and switch
 
 ### Check status
 `git status` # shows changed files, untracked files, branch
@@ -27,3 +27,6 @@
 ### Undoing
 `git restore <file>` # restore file to last commit  
 `git restore --staged <file>` # unstage file
+
+## Delete local branches
+`git branch -d branch-name`
