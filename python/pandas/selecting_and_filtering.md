@@ -18,4 +18,5 @@ df[df["age"] > 30]
 df[(df["age"] > 20) & (df["age"] < 40)]
 df[df["name"].isin(["A", "C"])]
 df[df["name"].str.contains("a", case=False)]
+df_small_80s = df_small[df_small['year'].between(1980, 1989)]
 ```
