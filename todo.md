@@ -5,7 +5,6 @@ coding-notes/
 │   ├── string_manipulation.md
 │   ├── ~~datatime_manipulation.md~~
 │   ├── ~~pandas.md~~
-│   ├── sklearn.md
 │   └── examples/
 │
 ├── sql/
