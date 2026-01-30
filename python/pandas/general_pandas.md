@@ -126,6 +126,17 @@ df.groupby("team").agg({
 })
 ```
 
+### Ranking based on multiple dataframes
+df_compare.assign(
+    total_rank=df_compare[
+        'total_medals'
+    ].rank(ascending=False),
+    efficiency_rank=df_compare[
+        'efficiency_per_capita'
+    ].rank(ascending=False),
+).assign(
+    combined_rank=lambda x: x.total_rank + x.efficiency_rank
+).sort_values("combined_rank").head(10)
 
 
 
