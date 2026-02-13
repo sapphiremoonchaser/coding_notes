@@ -23,3 +23,9 @@ Solution:
 * Use Negative Binomial Regression
 
 
+# Negative Binomial Regression
+
+* Extends Poisson
+* Allows variance to exceed the mean
+* More flexible for real-world count data
+
